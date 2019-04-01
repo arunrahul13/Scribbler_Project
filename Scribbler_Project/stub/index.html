@@ -14,36 +14,57 @@
 </head>
 <body>
     <div id="main-container-div">
-
         <div class="header">
 
-        	<!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
+            <!-- Header Section starts -->
             <p class="page-title">ScriBBler</p>
             <p class="subTitle">Explore, Imagine, Create</p>
+
+            <!-- Buttons for Sign in and Sign Out-->
             <div class="signbuttons">
-                <button type="button" id="buttonForSignIn">Sign In</button>
+                <button id="buttonForSignIn">Sign In</button>
                 <button id="buttonForSignUp">Sign Up</button>
             </div>
+            <!--  Header section ends -->
+
+            <!-- Modals for Sign in and Sign Up -->
             <div id="myModal" class="modal">
-                <div class="signUpContent">
-                    <span class="close">&times;</span>
-                    <h3>Get Started</h3>
+                <!-- Sign In Content -->
+                <div id="signInContent">
+                    <div id="welcomeBack">Welcome Back!
+                        <span class="close">&times;</span>
+                    </div>
                     <hr>
-                    <form>
-                        <label class="labelText"> Full Name: </label>
-                        <input type="text" placeholder="Enter Full Name" id="fullName" required>
-                        <label class="labelText">User Name:</label>
-                        <input type="text" placeholder="Enter Username" id="userName" required>
+                    <form method="post">
+                        <label class="labelText">Username</label>
+                        <input type="text" placeholder="Enter Username" id="userNameForSignIn" required>
                         <label>Password</label>
-                        <input type="password" placeholder="Enter Password" id="password" required>
+                        <input type="password" placeholder="Enter Password" id="passwordForSignIn" required>
+                        <button class="submit-btn">Sign In</button>
+                    </form>
+                    <div id="noMember">Not a member?
+                        <a id="goToSignUp">Sign Up</a>
+                    </div>
+                </div>
+                <!-- Sign Up Content -->
+                <div id="signUpContent">
+                    <div id="getStarted">Get Started
+                    <span class="close">&times;</span>
+                    </div>
+                    <hr>
+                    <form method="post">
+                        <label class="labelText"> Full Name</label>
+                        <input type="text" placeholder="Enter Full Name" id="fullNameForSignUp" required>
+                        <label class="labelText">Username</label>
+                        <input type="text" placeholder="Enter Username" id="userNameForSignUp" required>
+                        <label>Password</label>
+                        <input type="password" placeholder="Enter Password" id="passwordForSignUp" required>
                         <label>Confirm Password</label>
-                        <input type="password" placeholder="Confirm Password" id="confirmPassword" required>
+                        <input type="password" placeholder="Confirm Password" id="confirmPasswordForSignUp" required>
                         <button class="submit-btn">Sign Up</button>
                     </form>
                 </div>
             </div>
-
-
         </div>
            
         <div class="postButtons">
@@ -51,18 +72,6 @@
         	<!-- Insert code for All Posts & Create Post button here -->
 
         </div>
-    </div>
-
-    <div>
-
-    	<!-- Insert code for Sign In modal here -->
-
-    </div>
-
-    <div>
-
-    	<!-- Insert code for Sign Up modal here -->
-
     </div>
 
     <div>
