@@ -3,3 +3,6 @@
 };
 
 
+function toggleLike() {
+    document.getElementById('btn2').innerText='Liked';  
+};

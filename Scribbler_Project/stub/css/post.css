@@ -38,3 +38,12 @@
 .btn:hover{
     cursor: pointer;
 }
+.postLike{
+    border-radius: 5px;
+}
+
+#counterliked{
+    font-size: 15px; 
+    font-family: 'Abel', sans-serif;
+    margin-top:5px;
+}
