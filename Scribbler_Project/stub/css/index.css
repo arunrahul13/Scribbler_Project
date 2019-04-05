@@ -9,6 +9,48 @@ body{
    overflow:hidden;
    display: block;
 } 
+/*
+div.postButtons{
+   position: absolute;
+   top: 42%;
+   left: 42%;
+}
+/*
+.postButtons{
+   display: flex;
+   justify-content: center;
+   background-color:darkgoldenrod;
+   font-family:Itim;
+   font-size: 20px;
+   color:black;
+   padding: 12px 12px 10px 10px;
+   margin: 4px;
+   border: 1px solid grey;
+   cursor: pointer;
+   
+} */
+
+.postButton{
+   background-color: darkgoldenrod;
+   font-family:Itim;
+   font-size: 20px;
+   color:black;
+   padding: 12px 12px 10px 10px;
+   margin-left: 10px
+}
+.postButtons{
+ 
+ /*  display: flex;
+ height: 100%;
+ width: 100%;
+ justify-content: center;
+ align-items: center;
+ */
+ position: absolute;
+ top: 42%;
+ left: 42%;
+
+}
 
 /* Set a style for the rest of the elements besides the header elements on the index.html page */
                                  
