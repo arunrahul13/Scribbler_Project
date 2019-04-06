@@ -1,6 +1,8 @@
+
+
 var trashFunctions = function(numberOfPosts) {
 
-    for (var i = 0; i < numberOfPosts; i++) {
+    for ( var i = 0; i < numberOfPosts; i++) {
         // Get the trash modal
         var modal = document.getElementsByClassName('trash-modal')[i];
 
@@ -11,6 +13,9 @@ var trashFunctions = function(numberOfPosts) {
         var close = document.getElementsByClassName("trash-modal-button-no")[i];
 
         // When the user clicks on the trash icon, open the modal 
+       
+
+
         div.onclick = function() {
             modal.style.display = "block";
         }
@@ -19,8 +24,28 @@ var trashFunctions = function(numberOfPosts) {
         close.onclick = function() {
             modal.style.display = "none";
         }
+
+      
+       }
     }
-}
+
+
+
+
+    //when user click the yes button in modal to delete the post , this function calls up
+     function remove(id){
+
+              var realId = id + "1";
+
+              document.getElementById(realId).style.display = "none";
+
+       
+           console.log(realId);
+            
+        }
+
+
+
 
 trashFunctions(5)
 
