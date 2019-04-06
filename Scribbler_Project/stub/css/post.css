@@ -52,7 +52,7 @@
 
 
 #commentdiv{
-    background-color: gray;
+    background-color: gainsboro;
     width:70%;
     flex-flow:row wrap;
     width: 54.5%;
@@ -64,4 +64,5 @@
     background: white;
     padding: 19px;
     width: 80%;
+    overflow: hidden;
 }
