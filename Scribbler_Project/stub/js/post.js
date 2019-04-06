@@ -16,17 +16,18 @@ function enableEditableText(){
     //Div element
     var getDiv = document.getElementById('blogBodyId');
     //Create a input element
-    var inputElement = '<div><textarea class="txtBlog" id="txtEditedBlog" rows="10"style="width:99%">'+
+    var inputElement = '<div><br><textarea class="txtBlog" id="txtEditedBlog" rows="10"style="width:99.5%">'+
     getBlogContent+
-    '</textarea></div>'
+    '</textarea></div><br>'
     //Update the Div element
     getDiv.innerHTML = inputElement;
   }
   function updateEditedBlog(){
+    debugger;
     var editedBlog = document.getElementById('txtEditedBlog');
   
-    var textEdited = (editedBlog.innerHTML).toString();
-    debugger;
+    var textEdited = (editedBlog.value).toString();
+    
     var pElement = '<p id="blogBody">'+
     textEdited+
     '</p>';
@@ -50,9 +51,8 @@ function addComment(){
   });
 
   var x = document.getElementById("txtCommentCommentPost").value;
-  if(x!=""){
-    console.log(x);  
-    var pElement = '<div style="background-color: gray;width:70%;flex-flow:row wrap; width: 53%; display: flex; justify-content: center;"><p style="background: white; padding: 15px; width: 80%; margin-bottom: -5px;">'+ x + '</p></div>';
+  if(x!=""){ 
+    var pElement = '<div id="commentdiv"><p class="eachcomment">'+ x + '</p></div>';
   var getDiv = document.getElementById('listAllComments');
   getDiv.innerHTML = pElement + getDiv.innerHTML;}
   
