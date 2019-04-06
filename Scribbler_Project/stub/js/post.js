@@ -16,9 +16,9 @@ function enableEditableText(){
     //Div element
     var getDiv = document.getElementById('blogBodyId');
     //Create a input element
-    var inputElement = '<textarea class="txtBlog" id="txtEditedBlog" rows="10" cols="220">'+
+    var inputElement = '<div><textarea class="txtBlog" id="txtEditedBlog" rows="10"style="width:99%">'+
     getBlogContent+
-    '</textarea>'
+    '</textarea></div>'
     //Update the Div element
     getDiv.innerHTML = inputElement;
   }
@@ -42,3 +42,19 @@ function toggleLike() {
     else
     document.getElementById('counterliked').innerText=x++ + ' people like this!';
 };
+
+function addComment(){
+  console.log("Inside add comment");
+  var x = document.getElementById("txtCommentCommentPost").addEventListener("onchange", function(){
+    document.getElementById("txtCommentCommentPost").innerHTML;
+  });
+
+  var x = document.getElementById("txtCommentCommentPost").value;
+  if(x!=""){
+    console.log(x);  
+    var pElement = '<div style="background-color: gray;width:70%;flex-flow:row wrap; width: 53%; display: flex; justify-content: center;"><p style="background: white; padding: 15px; width: 80%; margin-bottom: -5px;">'+ x + '</p></div>';
+  var getDiv = document.getElementById('listAllComments');
+  getDiv.innerHTML = pElement + getDiv.innerHTML;}
+  
+  
+}

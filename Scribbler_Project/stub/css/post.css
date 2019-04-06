@@ -47,3 +47,10 @@
     font-family: 'Abel', sans-serif;
     margin-top:5px;
 }
+
+.comment{
+    margin-top: 10px;
+}
+.allComments{
+    background-color: gray;
+}

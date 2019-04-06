@@ -45,12 +45,20 @@
         
 
 <div class="commentPost">
-        <textarea rows="4" cols="100" placeholder="Leave a comment ..."></textarea> >
-        
-    </div><br>
-    <button class="btn postComment" onclick="addComment()">Comment</button>
+        <textarea id="txtCommentCommentPost" rows="4" cols="100" placeholder="Leave a comment"></textarea>
+        <br>
+        <button class='btn comment' onclick="addComment()">Comment</button>
+    </div>
+    
+    
+    <div class="commentSection">
+        <h3>All Comments</h3>
+        <div id="listAllComments">
+            
+        </div>
+    </div>
 
-
+    
     <!-- Insert code for Like button, Comment button, Comment box here-->
 
     <script src="..\js\post.js" defer></script>
