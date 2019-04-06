@@ -10,8 +10,60 @@
 </head>
 <body>
         <div class="header">
-             <!-- Insert code for Sign Up, Sign In button here. 
-               Add code for "ScriBBler" heading and the sub-heading -->
+            <div id="main-container-div">
+                <div class="header">
+        
+                    <!-- Header Section starts -->
+                    <p class="page-title">ScriBBler</p>
+                    <p class="subTitle">Explore, Imagine, Create</p>
+        
+                    <!-- Buttons for Sign in and Sign Out-->
+                    <div class="signbuttons">
+                        <button id="buttonForSignIn">Sign In</button>
+                        <button id="buttonForSignUp">Sign Up</button>
+                    </div>
+                </div>
+                    <!--  Header section ends -->
+        
+                    <!-- Modals for Sign in and Sign Up -->
+                    <div id="myModal" class="modal">
+                        <!-- Sign In Content -->
+                        <div id="signInContent">
+                            <div id="welcomeBack">Welcome Back!
+                                <span class="close">&times;</span>
+                            </div>
+                            <hr>
+                            <form method="post">
+                                <label class="labelText">Username</label>
+                                <input type="text" placeholder="Enter Username" id="userNameForSignIn" required>
+                                <label>Password</label>
+                                <input type="password" placeholder="Enter Password" id="passwordForSignIn" required>
+                                <button class="submit-btn">Sign In</button>
+                            </form>
+                            <div id="noMember">Not a member?
+                                <a id="goToSignUp">Sign Up</a>
+                            </div>
+                        </div>
+                        <!-- Sign Up Content -->
+                        <div id="signUpContent">
+                            <div id="getStarted">Get Started
+                            <span class="close">&times;</span>
+                            </div>
+                            <hr>
+                            <form method="post">
+                                <label class="labelText"> Full Name</label>
+                                <input type="text" placeholder="Enter Full Name" id="fullNameForSignUp" required>
+                                <label class="labelText">Username</label>
+                                <input type="text" placeholder="Enter Username" id="userNameForSignUp" required>
+                                <label>Password</label>
+                                <input type="password" placeholder="Enter Password" id="passwordForSignUp" required>
+                                <label>Confirm Password</label>
+                                <input type="password" placeholder="Confirm Password" id="confirmPasswordForSignUp" required>
+                                <button class="submit-btn">Sign Up</button>
+                            </form>
+                        </div>
+                    </div>
+                
         </div>
 
     <div class="blogContent">
@@ -25,7 +77,7 @@
 </div>
 
 <div class="blogEdit" onclick="toggleEditSave()">    
-   <button type="button" class="btn" id="btn1"><span>Edit</span></button>
+   <button type="button" class="button" id="button1"><span>Edit</span></button>
  </div>
 </div>
 <br>
@@ -37,7 +89,7 @@
 </div>
 
 <div>
-        <button class="postLike btn" id="btn2" onclick="toggleLike()"><span>Like</span>
+        <button class="postLike button" id="button2" onclick="toggleLike()"><span>Like</span>
         </button>
         <p id="counterliked">Be the first one to like this!</p>
 </div>
@@ -47,7 +99,7 @@
 <div class="commentPost">
         <textarea id="txtCommentCommentPost" rows="4" cols="100" placeholder="Leave a comment"></textarea>
         <br>
-        <button class='btn comment' onclick="addComment()">Comment</button>
+        <button class='button comment' onclick="addComment()">Comment</button>
     </div>
     
     

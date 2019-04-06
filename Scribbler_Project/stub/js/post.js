@@ -1,9 +1,9 @@
  function toggleEditSave() {
-     if( document.getElementById('btn1').innerText=='Edit'){
-        document.getElementById('btn1').innerText='Save'; 
+     if( document.getElementById('button1').innerText=='Edit'){
+        document.getElementById('button1').innerText='Save'; 
         enableEditableText();
      }else{
-        document.getElementById('btn1').innerText='Edit'; 
+        document.getElementById('button1').innerText='Edit'; 
         updateEditedBlog();
      }
  
@@ -26,7 +26,7 @@ function enableEditableText(){
     var editedBlog = document.getElementById('txtEditedBlog');
   
     var textEdited = (editedBlog.innerHTML).toString();
-    
+    debugger;
     var pElement = '<p id="blogBody">'+
     textEdited+
     '</p>';
@@ -36,7 +36,7 @@ function enableEditableText(){
   }
 var x=1;
 function toggleLike() {
-    document.getElementById('btn2').innerText='Liked!';
+    document.getElementById('button2').innerText='Liked!';
     if(x==1)
     document.getElementById('counterliked').innerText=x++ + ' person likes this!'; 
     else

@@ -27,7 +27,7 @@
 }
 
 
-.btn{
+.button{
     border:none;
     color: white;
     background-color: #ff0066;
@@ -35,7 +35,7 @@
     width: 80px;
     box-shadow: 0px 5px  12px -4px #ff0066;
 }
-.btn:hover{
+.button:hover{
     cursor: pointer;
 }
 .postLike{
