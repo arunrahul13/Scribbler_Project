@@ -1,6 +1,6 @@
 
 
-var trashFunctions = function(numberOfPosts) {
+var binFunctions = function(numberOfPosts) {
 
     for ( var i = 0; i < numberOfPosts; i++) {
         // Get the trash modal
@@ -32,22 +32,12 @@ var trashFunctions = function(numberOfPosts) {
 
 
 
-    //when user click the yes button in modal to delete the post , this function calls up
-     function remove(id){
-
-              var realId = id + "1";
-
-              document.getElementById(realId).style.display = "none";
-
-       
-           console.log(realId);
-            
-        }
+    
 
 
 
 
-trashFunctions(5)
+binFunctions(5)
 
 function navigateToPost() {
     location.href = "post.html";
