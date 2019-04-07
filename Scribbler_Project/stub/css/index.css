@@ -9,26 +9,47 @@ body{
    overflow:hidden;
    display: block;
 } 
-/*
-div.postButtons{
-   position: absolute;
-   top: 42%;
-   left: 42%;
+
+#createPostContent{
+   background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-/*
-.postButtons{
-   display: flex;
-   justify-content: center;
-   background-color:darkgoldenrod;
-   font-family:Itim;
-   font-size: 20px;
-   color:black;
-   padding: 12px 12px 10px 10px;
-   margin: 4px;
-   border: 1px solid grey;
-   cursor: pointer;
-   
-} */
+
+.modal {
+   display: none;
+   position: fixed;
+   z-index: 1;
+   padding-top: 100px;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+   background-color: rgb(0,0,0);
+   background-color: rgba(0,0,0,0.4);
+}
+
+#title{
+   width: 50%;
+   height: 30%;
+}
+
+#content{
+   width: 90%;
+   height: 350px;
+     
+}
+
+
+
+
+/* Set a style for the rest of the elements besides the header elements on the index.html page */
 
 .postButton{
    background-color: darkgoldenrod;
@@ -39,8 +60,9 @@ div.postButtons{
    margin-left: 10px
 }
 .postButtons{
- 
- /*  display: flex;
+
+ /* As its not displaying in the center of the page, commented and used the other code as below
+  display: flex;
  height: 100%;
  width: 100%;
  justify-content: center;
@@ -51,6 +73,29 @@ div.postButtons{
  left: 42%;
 
 }
-
-/* Set a style for the rest of the elements besides the header elements on the index.html page */
                                  
+
+
+.create-post-btn{
+   background-color: green;
+   color:white;
+   margin: auto;
+   display: flex;
+   justify-content: center;
+   padding: 15px;
+   width: 100px;
+   font-size: 18px;
+   margin-top: 35px;
+   margin-bottom: 20px;
+   border: 0;
+   cursor:pointer;
+}
+
+#createPost{
+   font-family:"Comic Sans MS";
+   color: black;
+   font-size: xx-large;
+   font-weight: bolder;
+   text-align: center;
+}
+

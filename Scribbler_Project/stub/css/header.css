@@ -50,7 +50,7 @@ hr{
     cursor: pointer;
 }
 
-input{
+input,textarea{
     padding: 2%;
     background-color: lightgray;
     border: none;
