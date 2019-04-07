@@ -52,7 +52,7 @@ function addComment(){
 
   var x = document.getElementById("txtCommentCommentPost").value;
   if(x!=""){ 
-    var pElement = '<div id="commentdiv"><p class="eachcomment">'+ x + '</p></div>';
+    var pElement = '<div id="commentdiv"><p class="overflow-visible eachcomment">'+ x + '</p></div>';
   var getDiv = document.getElementById('listAllComments');
   getDiv.innerHTML = pElement + getDiv.innerHTML;}
   
