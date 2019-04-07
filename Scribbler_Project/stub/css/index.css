@@ -38,11 +38,17 @@ body{
 #title{
    width: 50%;
    height: 30%;
+   padding: 2%;
+   background-color: lightgray;
+   border: none;
 }
 
 #content{
    width: 90%;
    height: 350px;
+   padding: 2%;
+   background-color: lightgray;
+   border: none;
      
 }
 
