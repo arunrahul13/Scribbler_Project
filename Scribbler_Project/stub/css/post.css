@@ -64,4 +64,5 @@
     background: white;
     padding: 19px;
     width: 80%;
+    overflow: hidden;
 }
