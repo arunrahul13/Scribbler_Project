@@ -60,6 +60,12 @@ form {
     justify-content: center;
 }
 
+input,text{ 
+    padding: 2%; 
+    background-color: lightgray; 
+    border: none; 
+    height: 30px;  
+} 
 label{
     padding-top: 10px;
     font-weight: bolder;
