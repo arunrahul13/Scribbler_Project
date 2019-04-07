@@ -142,6 +142,9 @@ a{
 .close {
     color: #aaaaaa;
     float: right;
+    top:-25px;
+    right:-10px;
+    position: relative;
     font-size: 40px;
     font-weight: bold;
 }
