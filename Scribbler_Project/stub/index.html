@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
 
     <!-- Place all CSS for header in this file -->
@@ -14,36 +14,85 @@
 </head>
 <body>
     <div id="main-container-div">
-
         <div class="header">
 
-        	<!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
+            <!-- Header Section starts -->
+            <p class="page-title">ScriBBler</p>
+            <p class="subTitle">Explore, Imagine, Create</p>
 
+            <!-- Buttons for Sign in and Sign Out-->
+            <div class="signbuttons">
+                <button id="buttonForSignIn">Sign In</button>
+                <button id="buttonForSignUp">Sign Up</button>
+            </div>
+            <!--  Header section ends -->
+
+            <!-- Modals for Sign in and Sign Up -->
+            <div id="myModal" class="modal">
+                <!-- Sign In Content -->
+                <div id="signInContent">
+                    <div id="welcomeBack">Welcome Back!
+                        <span class="close">&times;</span>
+                    </div>
+                    <hr>
+                    <form method="post">
+                        <label class="labelText">Username</label>
+                        <input type="text" placeholder="Enter Username" id="userNameForSignIn" required>
+                        <label>Password</label>
+                        <input type="password" placeholder="Enter Password" id="passwordForSignIn" required>
+                        <button class="submit-btn">Sign In</button>
+                    </form>
+                    <div id="noMember">Not a member?
+                        <a id="goToSignUp">Sign Up</a>
+                    </div>
+                </div>
+                <!-- Sign Up Content -->
+                <div id="signUpContent">
+                    <div id="getStarted">Get Started
+                    <span class="close">&times;</span>
+                    </div>
+                    <hr>
+                    <form method="post">
+                        <label class="labelText"> Full Name</label>
+                        <input type="text" placeholder="Enter Full Name" id="fullNameForSignUp" required>
+                        <label class="labelText">Username</label>
+                        <input type="text" placeholder="Enter Username" id="userNameForSignUp" required>
+                        <label>Password</label>
+                        <input type="password" placeholder="Enter Password" id="passwordForSignUp" required>
+                        <label>Confirm Password</label>
+                        <input type="password" placeholder="Confirm Password" id="confirmPasswordForSignUp" required>
+                        <button class="submit-btn">Sign Up</button>
+                    </form>
+                </div>
+            </div>
         </div>
            
         <div class="postButtons">
+            
 
         	<!-- Insert code for All Posts & Create Post button here -->
 
+            <button id="buttonForAllPosts" onclick="window.location.href='html/bloglist.html'" class="postButton">All Posts</button>
+            <button id="buttonForCreatePost" class="postButton">Create Post</button>
+
         </div>
-    </div>
-
-    <div>
-
-    	<!-- Insert code for Sign In modal here -->
-
-    </div>
-
-    <div>
-
-    	<!-- Insert code for Sign Up modal here -->
-
     </div>
 
     <div>
 
     	<!-- Insert code for Create Post modal here -->
-
+    
+    <div id="createPostModal" class="modal">
+            <div id="createPostContent">
+                <h1><b>Pen Your Post</b><span class="close" id="closeCreatePost">&times;</span></h1>
+                <form method="post">
+                    <label for="title" class="labelText">Title:</label>
+                    <input type="text" placeholder="Enter Title" id="title" required>
+                    <label for="content" class="labelText">Content:</label>
+                    <textarea placeholder="Enter Content" rowspan="50" colspan="50" id="content" class="content" required>
+                    </textarea><button class="create-post-btn">Create</button>
+                </form>
+            </div>
     </div>
 
 	<!-- Place all Javascript for header in this file -->
