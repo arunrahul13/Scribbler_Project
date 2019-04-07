@@ -51,8 +51,9 @@ function addComment(){
   });
 
   var x = document.getElementById("txtCommentCommentPost").value;
-  if(x!=""){ 
+  if(x!=""){    
     var pElement = '<div id="commentdiv"><p class="overflow-visible eachcomment">'+ x + '</p></div>';
+    document.getElementById("txtCommentCommentPost").value="";
   var getDiv = document.getElementById('listAllComments');
   getDiv.innerHTML = pElement + getDiv.innerHTML;}
   
